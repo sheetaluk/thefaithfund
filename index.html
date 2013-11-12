@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en" ng-app="admintoolsApp">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Faith Fund</title>
+  <link rel="stylesheet" href="css/thefaithfund.css">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+</head>
+<body>
+  <div class="container-main">
+    <div class="section-main">
+      <h1><span>The Faith Fund</span></h1>
+      <div class="content-image">
+        <img src="images/faithIntroPic.png"/>
+      </div>
+      <div class="pouch-image">
+        <img src="images/pouches.png" height="190" width="230">
+      </div>
+      <div class="content-text">
+        <p>
+          My name is Faith and I am a rescue dog.
+          I was rescued in September 2010.
+        </p>
+        <p>
+          For Christmas this year, I want to raise $1000 
+          to donate to the ASPCA to help my brothers 
+          and sisters find warm, loving homes.
+        <br />
+          Beautiful cloth pouches, hand-made by
+          my mum, dad and grandma are for sale at $10 ea.
+        </p>
+        <p>
+          If you would like one, please tweet at me:
+          <br/>
+          <a href="https://twitter.com/intent/tweet?screen_name=TheFaithFund&text=Count%20me%20in!%20I%20would%20love%20to%20make%20this%20Christmas%20awesome%20for%20rescue%20pups!%20#theFaithFund%20See:%20http://TheFaithFund.com" class="twitter-mention-button" data-size="large" data-related="sheetaluk,flythedamnplane">Tweet to @TheFaithFund</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+          <br />
+          or email me at 
+          <span class="email">TheFaithFund@gmail.com</span>
+        </p>
+        <p>
+          We prefer payment by check, but if you know 
+          mum or dad, cash is fine too.
+        </p>
+        <p>
+          PS: <a href="https://play.spotify.com/album/2FbviTPUjgJJUxsGM1sGDq">Bon Jovi</a> 
+          is my favorite band.
+        </p>
+      </div>
+    </div>
+    <div class="artwork-strip">
+    </div>
+    <script src="js/lib/jquery-1.10.2.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script>
+      var artworkDoggieThumbnails = [
+        {'translate3d': 'translate3d(0px, 44px, 0px)',
+        'background-image': 'url(images/1.jpg)',
+        'width': '128px',
+        'height': '128px'},
+        {'translate3d': 'translate3d(0px, 152px, 0px)',
+         'background-image':'url(images/2.jpg)',
+         'width': '64px',
+         'height': '64px'},
+        {'translate3d': 'translate3d(128px, 206px, 0px)',
+         'background-image': 'url(images/3.jpg)',
+         'width': '192px',
+         'height': '192px'},
+        {'translate3d': 'translate3d(64px, 0px, 0px)',
+          'background-image':'url(images/4.jpg)',
+          'width': '64px',
+          'height': '64px'},
+        {'translate3d': 'translate3d(64px, 192px, 0px)',
+          'background-image':'url(images/5.jpg)',
+          'width': '64px',
+          'height': '64px'},
+        {'translate3d': 'translate3d(128px, 0px, 0px)',
+          'background-image': 'url(images/6.jpg)',
+          'width': '128px',
+          'height': '128px'},
+        {'translate3d': 'translate3d(256px, 0px, 0px)',
+          'background-image':'url(images/7.jpg)',
+          'width': '64px',
+          'height': '64px'},
+        {'translate3d': 'translate3d(156px, 144px, 0px)',
+          'background-image':'url(images/39.jpg)',
+          'width': '94px',
+          'height': '94px'},
+        {'translate3d': 'translate3d(320px, 0px, 0px)',
+          'background-image':'url(images/9.jpg)',
+          'width': '128px', 
+          'height': '128px'},
+        {'translate3d': 'translate3d(320px, 85px, 0px)',
+          'background-image': 'url(images/10.jpg)',
+          'width': '128px', 
+          'height': '128px'},
+        {'translate3d': 'translate3d(384px, 215px, 0px)',
+          'background-image': 'url(images/11.jpg)',
+          'width': '64px', 
+          'height': '64px'},
+        {'translate3d': 'translate3d(448px, 128px, 0px)',
+          'background-image': 'url(images/12.jpg)',
+          'width': '128px', 
+          'height': '128px'},
+        {'translate3d': 'translate3d(448px, 216px, 0px)',
+          'background-image': 'url(images/13.jpg)',
+          'width': '64px', 
+          'height': '64px'},
+        {'translate3d': 'translate3d(512px, 64px, 0px)',
+          'background-image': 'url(images/14.jpg)',
+          'width': '64px', 
+          'height': '64px'},
+        {'translate3d': 'translate3d(576px, 0px, 0px)',
+          'background-image': 'url(images/15.jpg)',
+          'width': '192px', 
+          'height': '192px'},
+        {'translate3d': 'translate3d(576px, 156px, 0px)',
+          'background-image': 'url(images/16.jpg)',
+          'width': '64px', 
+          'height': '64px'},
+        {'translate3d': 'translate3d(640px, 216px, 0px)',
+          'background-image': 'url(images/17.jpg)',
+          'width': '64px', 
+          'height': '64px'},
+        {'translate3d': 'translate3d(704px, 206px, 0px)',
+          'background-image': 'url(images/18.jpg)',
+          'width': '64px', 
+          'height': '64px'},
+        {'translate3d': 'translate3d(768px, 64px, 0px)',
+          'background-image': 'url(images/19.jpg)',
+          'width': '128px', 
+          'height': '128px'},
+        {'translate3d': 'translate3d(768px, 192px, 0px)',
+          'background-image': 'url(images/20.jpg)',
+          'width': '64px', 
+          'height': '64px'},
+        {'translate3d': 'translate3d(832px, 0px, 0px)',
+          'background-image': 'url(images/21.jpg)',
+          'width': '64px', 
+          'height': '64px'},
+        {'translate3d': 'translate3d(832px, 149px, 0px)',
+          'background-image': 'url(images/22.jpg)',
+          'width': '64px', 
+          'height': '64px'},
+        {'translate3d': 'translate3d(896px, 0px, 0px)',
+          'background-image': 'url(images/23.jpg)',
+          'width': '64px', 
+          'height': '64px'},
+        {'translate3d': 'translate3d(896px, 42px, 0px)',
+          'background-image': 'url(images/24.jpg)',
+          'width': '128px', 
+          'height': '128px'},
+        {'translate3d': 'translate3d(896px, 192px, 0px)',
+          'background-image': 'url(images/25.jpg)',
+          'width': '64px', 
+          'height': '64px'},
+        {'translate3d': 'translate3d(1024px, 128px, 0px)',
+          'background-image': 'url(images/26.jpg)',
+          'width': '192px', 
+          'height': '192px'},
+        {'translate3d': 'translate3d(960px, 0px, 0px)',
+          'background-image': 'url(images/27.jpg)',
+          'width': '64px', 
+          'height': '64px'},
+        {'translate3d': 'translate3d(960px, 192px, 0px)',
+          'background-image': 'url(images/28.jpg)',
+          'width': '64px', 
+          'height': '64px'},
+        {'translate3d': 'translate3d(1024px, 64px, 0px)',
+          'background-image': 'url(images/29.jpg)',
+          'width': '64px', 
+          'height': '64px'},
+        {'translate3d': 'translate3d(1088px, 86px, 0px)',
+          'background-image': 'url(images/30.jpg)',
+          'width': '64px', 
+          'height': '64px'},
+        {'translate3d': 'translate3d(1152px, 0px, 0px)',
+          'background-image': 'url(images/31.jpg)',
+          'width': '64px', 
+          'height': '64px'},
+        {'translate3d': 'translate3d(1152px, 64px, 0px)',
+          'background-image': 'url(images/32.jpg)',
+          'width': '64px', 
+          'height': '64px'},
+        {'translate3d': 'translate3d(1216px, 0px, 0px)',
+          'background-image': 'url(images/33.jpg)',
+          'width': '128px', 
+          'height': '128px'},
+        {'translate3d': 'translate3d(1216px, 128px, 0px)',
+          'background-image': 'url(images/34.jpg)',
+          'width': '128px', 
+          'height': '128px'},
+        {'translate3d': 'translate3d(1344px, 192px, 0px)',
+          'background-image': 'url(images/35.jpg)',
+          'width': '192px', 
+          'height': '192px'},
+        {'translate3d': 'translate3d(1344px, 0px, 0px)',
+          'background-image': 'url(images/36.jpg)',
+          'width': '128px', 
+          'height': '128px'},
+        {'translate3d': 'translate3d(1344px, 85px, 0px)',
+          'background-image': 'url(images/37.jpg)',
+          'width': '64px', 
+          'height': '64px'},
+        {'translate3d': 'translate3d(1408px, 128px, 0px)',
+          'background-image': 'url(images/38.jpg)',
+          'width': '64px', 
+          'height': '64px'}
+      ];
+
+      $.each(artworkDoggieThumbnails, function(key, thumbnail) {
+        $('.artwork-strip').append(
+          '<div class="artwork-strip-tile" style="-ms-transform: '
+          + thumbnail.translate3d
+          + '; -moz-transform:'
+          + thumbnail.translate3d
+          + '; -webkit-transform:'
+          + thumbnail.translate3d
+          + '; background-image: '
+          + thumbnail['background-image']
+          + '; width: '
+          + thumbnail.width
+          + '; height: '
+          + thumbnail.height
+          + ';"></div>'
+        );
+      });
+
+      
+      $('.artwork-strip').append("<p>sheetal</p>");
+
+      $('.artwork-strip').click(function() {
+        window.location="http://www.aspca.org/";
+      });
+    </script>
+  </div>
+</body>
+</html>
